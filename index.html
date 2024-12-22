@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+ 
+    <title>Portfolio </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="overflow-x-hidden font-Outfit leading-8">
+    <nav class="w-full fixed px-5 lg:p-8 xl:px-[8%] py-4 flex items-center justify-between z-50 bg-white">
+       
+        <h2 class="mr-14 font-Outfit text-[20px] font-semibold">HARYTECHS </h2>
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 px-12 py-3 rounded-full bg-transparent shadow-lg font-Ovo">
+            <li><a href="#home" class="nav-link text-gray-500 cursor-pointerk w-12 py-2 px-2">Home</a></li>
+            <li><a href="#about" class="nav-link text-gray-500 ">About me</a></li>
+            <li><a href="#services" class="nav-link text-gray-500 ">Service</a></li>
+            <li><a href="#work" class="nav-link text-gray-500">Work</a></li>
+            <li><a href="#contact" class="nav-link text-gray-500">Contact me</a></li>
+        </ul>
+        <div class="flex gap-4 items-center">
+            <!-- <button><img src="Images/moon-icon.svg "></button> -->
+            <a href="#contact"
+                class="hidden lg:flex items-center gap-4 px-9 py-2.5 border border-gray-500 rounded-full ml-4 bg-white  hover:-translate-y-1 duration-500 font-Ovo">
+                Contact </a>
+            <!-- <img src="Images/contact arrow.svg" alt="" class="w-5">  -->
+
+            <button class="block md:hidden ml-3" onclick="openMenu()">
+                <img src="Images/menu.svg" alt=""> 
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <ul id="sideMenu"
+            class="flex md:hidden flex-col py-20 px-10 fixed bg-rose-950 top-0 -right-64 bottom-0 w-64 h-screen text-white z-50 gap-4 transition duration-500 font-Ovo">
+            <div class="absolute right-6 top-4" onclick="closeMenu()">
+                <img src="Images/close.svg" class="cursor-pointer">
+            </div>
+            <li> <a href="#home" onclick="closeMenu()" class="text-white">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()" class="text-white">About me</a></li>
+            <li><a href="#services" onclick="closeMenu()" class="text-white">Service</a></li>
+            <li><a href="#work" onclick="closeMenu()" class="text-white">Work</a></li>
+            <li><a href="#contact" onclick="closeMenu()" class="text-white">Contact me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Heading -->
+    <div id="home"
+        class="w-11/12 max-w-3xl h-screen text-center flex flex-col justify-center items-center gap-4 mx-auto">
+        <img src="Images/profile.jpg" alt="" class="rounded-full w-28 mt-20">
+        <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-4 font-Ovo"> Hi, I'm Bilikis Oladipupo <img
+                src="Images/hand.svg"></h3>
+        <h1 class="text-3xl md:text-6xl lg:text-[66px] font-Ovo">Frontend Web Developer based in Nigeria.</h1>
+        <p class="max-w-2xl mx-auto font-Ovo"> I am a Frontend Developer in Lagos, with 6 Months experience intern at Sidmach
+            Technologies.</p>
+        <div class="flex flex-col sm:flex-row gap-4 mt-4">
+            <a href="#contact"
+                class="px-10 py-3  border rounded-full bg-rose-950 text-white flex items-center gap-2 hover:-translate-y-1 duration-500">Contact
+                me <img src="Images/rigth-arrow.svg" alt=""></a>
+            <a href="My Resume.pdf" download 
+                class="px-10 py-3  border border-gray-400 rounded-full bg-white flex items-center gap-2  hover:-translate-y-1 duration-500">My
+                resume <img src="Images/download.svg" alt=""></a>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20 ">
+        <h4 class="text-center mb-2 text-lg font-Ovo">Introduction</h4>
+        <h2 class="text-center text-5xl font-Ovo">About me</h2>
+
+        <div class="flex flex-col w-full lg:flex-row items-center gap-20 my-20">
+            <div class="max-w mx-auto relative">
+                <img src="Images/balqees.png" class="w-65 sm:w-80 rounded-3xl max-w-22">
+            </div>
+
+            <div class="flex-1">
+                <p class="mb-10 max-w-2xl font-Ovo">I am an experienced Frontend Developer with over 5 Months of expertise in thefield.
+                    Throughout my period of learning phase, I have had the priviledge of working on different projects
+                    to tailor my experience.</p>
+                <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 ">
+                        <img src="Images/code-icon.svg" class="mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
+                        <p class="text-gray-600 text-sm">HTML, CSS, Tailwindcss, Javascript, React</p>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl  p-6 ">
+                        <img src="Images/edu.svg" class="mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Education</h3>
+                        <p class="text-gray-600 text-sm">National Diploma in Statistics</p>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6">
+                        <img src="Images/project.svg" class="mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Projects</h3>
+                        <p class="text-gray-600 text-sm">Built more than 5 projects</p>
+                    </li>
+                </ul>
+
+                <h4 class="my-4 text-gray-800 font-Ovo">Tools I use </h4>
+                <ul class="flex items-center gap-3 sm:gap-5">
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border
+                         border-gray-500  hover:-translate-y-1 duration-500 rounded-lg"><img
+                            src="Images/visual-studio-code.png" alt="">
+                    </li>
+
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border
+                             border-gray-600  hover:-translate-y-1 duration-500 rounded-lg"> <img
+                            src="Images/Firebase.svg" alt="" class="w-8">
+                    </li>
+
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border 
+                             border-gray-600  hover:-translate-y-1 duration-500 rounded-lg"> <img
+                            src="Images/Figma.jpg" alt="" class="w-8">
+                    </li>
+
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border
+                             border-gray-500  hover:-translate-y-1 duration-500 rounded-lg"> <img
+                            src="Images/React.png" alt="" class="w-8">
+                    </li>
+
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border
+                             border-gray-500  hover:-translate-y-1 duration-500 rounded-lg"> <img src="Images/Git.jpg"
+                            alt="" class="w-8">
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Service -->
+    <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg font-Ovo">What I offer</h4>
+        <h2 class="text-center text-5xl font-Ovo">My services</h2>
+        <p class="text-center my-10 max-w-2xl mx-auto font-Ovo">I am a Frontend Developer in Lagos, with 6 Months experience
+            intern at Sidmach Technologies.</p>
+
+        <div class="flex items-center justify-center">
+            <div
+                class="border border-gray-800 rounded-lg px-5 py-7  hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] ">
+                <img src="Images/web developer.png" alt="" class="w-10 ">
+                <h3 class="text-lg my-4 text-gray-700">Web Design</h3>
+                <p class="text-sm text-gray-800 leading-5">Web development is the process of building, programming ....
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Works -->
+    <div id="work" class=" w-full py-10 scroll-mt-20 ">
+        <h4 class="text-center mb-2 text-lg font-Ovo">My portfolio</h4>
+        <h2 class="text-center text-5xl font-Ovo">My latest work.</h2>
+        <p class="text-center my-10 max-w-2xl mx-auto font-Ovo">Welcome to my web development portfolio! Explore a collection of
+            project showcasing my expertise in front end development. </p>
+
+        <div class="flex flex-col items-center justify-center gap-4 md:flex-row">
+            <div>
+                <a href="https://oladipupobaliki21.github.io/kitty-food/">
+                    <div
+                        class="aspect-square bg-[url('../Images/project_1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative border
+                    border-gray-900 custom-bg hover:-translate-y-1 duration-500 hover:transition ease-in-out delay-150">
+                    </div>
+                    <h2 class="mt-3 font-medium "> Kitty Foods</h2>
+                </a>
+
+                <a href="https://oladipupobaliki21.github.io/kitty-food/"
+                    class="flex items-center gap-1 hover:gap-2 ease-in duration-200 text-[#4c0519]">
+                    <p>See live project</p> <img src="Images/showmorered.svg">
+                </a>
+
+            </div>
+            <div>
+                <a href="https://oladipupobaliki21.github.io/Result-Summary-Component/">
+                    <div class="aspect-square bg-[url('../Images/project_2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative border
+              border-gray-900 custom-bg hover:-translate-y-1 duration-500"></div>
+                    <h2 class="mt-3 font-medium"> Result Summary Component</h2>
+                </a>
+                <a href="https://oladipupobaliki21.github.io/Result-Summary-Component/"
+                    class="flex items-center gap-1 hover:gap-2 ease-in duration-200 text-[#4c0519]">See live project
+                    <img src="Images/showmorered.svg"> </a>
+            </div>
+
+            <div>
+                <a href="https://oladipupobaliki21.github.io/Qr-Code/">
+                    <div class="aspect-square bg-[url('../Images/project_3.png')] bg-no-repeat bg-cover bg-center rounded-lg relative border
+                 border-gray-900 custom-bg hover:-translate-y-1 duration-500"></div>
+                    <h2 class="mt-3 font-medium">Qr Code</h2>
+                </a>
+                <a href="https://oladipupobaliki21.github.io/Qr-Code/"
+                    class="flex items-center gap-1 hover:gap-2 ease-in duration-200 text-[#4c0519]">See live project
+                    <img src="Images/showmorered.svg"> </a>
+            </div>
+
+        </div>
+        <a href="https://github.com/Oladipupobaliki21"
+            class="w-max flex items-center justify-center mx-auto px-10 py-3 my-20 border border-gray-600 rounded-full bg-rose-950 text-white hover:-translate-y-1 duration-500">Show
+            More
+        </a>
+
+
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class=" w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg font-Ovo">Connect with me</h4>
+        <h2 class="text-center text-5xl font-Ovo">Get in touch</h2>
+        <p class="text-center my-10 max-w-2xl mx-auto mt-5 mb-12 font-Ovo">I'd love to hear from you! If you have any questions,
+            comments or feedback, please use the form below </p>
+        <form action="https://api.web3forms.com/submit" method="POST" class="max-w-2xl mx-auto">
+            <div class="grid grid-cols-2 gap-2 mt-10 mb-8">
+                <input type="hidden" name="access_key"value="c2a537f6-d8f3-4596-a8c2-3d8e6f0adb00">
+                <input type="text" name="first_name" placeholder="Enter your name"
+                    class=" bg-white border-gray-500 flex-1 p-3 border-[0.5px] outline-none rounded-md" required>
+                <input type="email"  name="email" class=" border-gray-500 flex-1 p-3 border-[0.5px] outline-none rounded-md"
+                    placeholder="Enter Your email" required>
+            </div>
+            <textarea rows="6" placeholder="Your Message" name="message"
+                class="w-full border-[0.5px] border-gray-500 rounded-md p-4 mb-6 outline-none"></textarea>
+            <button class="w-max py-3 px-8 flex justify-center items-center mx-auto my-20 text-white cursor-pointer 
+                     hover:-translate-y-1 duration-500 mt-10 bg-[#4c0519] rounded-full" type="submit">Submit </button>
+        </form>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-20">
+        <div class="text-center">
+            <h2 class="mx-auto mb-2 font-Outfit font-semibold text-[20px]">HARYTECHS</h2>
+        </div>
+        <div class="w-max flex items-center mx-auto gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                <path
+                    d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+            </svg> oladipupobilikisarike@gmail.com
+        </div>
+        <div class="text-center sm:flex justify-between items-center border-t border-gray-500 mx-[10%] my-12 py-6">
+            <p>© 2024 HARYTECHS. All right reserved.</p>
+            <ul class="flex items-center justify-center gap-3 mt-4 sm:mt-0 ">
+                <li><a href="https://github.com/Oladipupobaliki21"> Github</a></li>
+                <li><a
+                        href="https://www.linkedin.com/in/oladipupo-bilikis-3745b325a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedln</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
